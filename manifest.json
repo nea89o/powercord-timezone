@@ -1,0 +1,7 @@
+{
+  "name": "Timezone Powercord",
+  "version": "1.0.0",
+  "description": "Translate timestamps to different timezones",
+  "author": "nea89",
+  "license": "LGPL 3"
+}

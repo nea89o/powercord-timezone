@@ -1,0 +1,198 @@
+{
+  "__comment": "This timezone list is very barren, however i am not willing to put much more energy into it rn. Contributions welcome.",
+  "__original_source": "The first iteration of this list was sourced from https://publib.boulder.ibm.com/tividd/td/TWS/SC32-1274-02/en_US/HTML/SRF_mst273.htm",
+  "timezones": [
+    {
+      "code": "GMT",
+      "name": "Greenwich Mean Time",
+      "offset": "GMT",
+      "offsetminutes": 0
+    },
+    {
+      "code": "UTC",
+      "name": "Universal Coordinated Time",
+      "offset": "GMT",
+      "offsetminutes": 0
+    },
+    {
+      "code": "ECT",
+      "name": "European Central Time",
+      "offset": "GMT+1:00",
+      "offsetminutes": 60
+    },
+    {
+      "code": "EET",
+      "name": "Eastern European Time",
+      "offset": "GMT+2:00",
+      "offsetminutes": 120
+    },
+    {
+      "code": "ART",
+      "name": "(Arabic) Egypt Standard Time",
+      "offset": "GMT+2:00",
+      "offsetminutes": 120
+    },
+    {
+      "code": "EAT",
+      "name": "Eastern African Time",
+      "offset": "GMT+3:00",
+      "offsetminutes": 180
+    },
+    {
+      "code": "MET",
+      "name": "Middle East Time",
+      "offset": "GMT+3:30",
+      "offsetminutes": 210
+    },
+    {
+      "code": "NET",
+      "name": "Near East Time",
+      "offset": "GMT+4:00",
+      "offsetminutes": 240
+    },
+    {
+      "code": "PLT",
+      "name": "Pakistan Lahore Time",
+      "offset": "GMT+5:00",
+      "offsetminutes": 300
+    },
+    {
+      "code": "IST",
+      "name": "India Standard Time",
+      "offset": "GMT+5:30",
+      "offsetminutes": 330
+    },
+    {
+      "code": "BST",
+      "name": "Bangladesh Standard Time",
+      "offset": "GMT+6:00",
+      "offsetminutes": 360
+    },
+    {
+      "code": "VST",
+      "name": "Vietnam Standard Time",
+      "offset": "GMT+7:00",
+      "offsetminutes": 420
+    },
+    {
+      "code": "CTT",
+      "name": "China Taiwan Time",
+      "offset": "GMT+8:00",
+      "offsetminutes": 480
+    },
+    {
+      "code": "JST",
+      "name": "Japan Standard Time",
+      "offset": "GMT+9:00",
+      "offsetminutes": 540
+    },
+    {
+      "code": "ACT",
+      "name": "Australia Central Time",
+      "offset": "GMT+9:30",
+      "offsetminutes": 570
+    },
+    {
+      "code": "AET",
+      "name": "Australia Eastern Time",
+      "offset": "GMT+10:00",
+      "offsetminutes": 600
+    },
+    {
+      "code": "SST",
+      "name": "Solomon Standard Time",
+      "offset": "GMT+11:00",
+      "offsetminutes": 660
+    },
+    {
+      "code": "NST",
+      "name": "New Zealand Standard Time",
+      "offset": "GMT+12:00",
+      "offsetminutes": 720
+    },
+    {
+      "code": "MIT",
+      "name": "Midway Islands Time",
+      "offset": "GMT-11:00",
+      "offsetminutes": -660
+    },
+    {
+      "code": "HST",
+      "name": "Hawaii Standard Time",
+      "offset": "GMT-10:00",
+      "offsetminutes": -600
+    },
+    {
+      "code": "AST",
+      "name": "Alaska Standard Time",
+      "offset": "GMT-9:00",
+      "offsetminutes": -540
+    },
+    {
+      "code": "PST",
+      "name": "Pacific Standard Time",
+      "offset": "GMT-8:00",
+      "offsetminutes": -480
+    },
+    {
+      "code": "PNT",
+      "name": "Phoenix Standard Time",
+      "offset": "GMT-7:00",
+      "offsetminutes": -420
+    },
+    {
+      "code": "MST",
+      "name": "Mountain Standard Time",
+      "offset": "GMT-7:00",
+      "offsetminutes": -420
+    },
+    {
+      "code": "CST",
+      "name": "Central Standard Time",
+      "offset": "GMT-6:00",
+      "offsetminutes": -360
+    },
+    {
+      "code": "EST",
+      "name": "Eastern Standard Time",
+      "offset": "GMT-5:00",
+      "offsetminutes": -300
+    },
+    {
+      "code": "IET",
+      "name": "Indiana Eastern Standard Time",
+      "offset": "GMT-5:00",
+      "offsetminutes": -300
+    },
+    {
+      "code": "PRT",
+      "name": "Puerto Rico and US Virgin Islands Time",
+      "offset": "GMT-4:00",
+      "offsetminutes": -240
+    },
+    {
+      "code": "CNT",
+      "name": "Canada Newfoundland Time",
+      "offset": "GMT-3:30",
+      "offsetminutes": -210
+    },
+    {
+      "code": "AGT",
+      "name": "Argentina Standard Time",
+      "offset": "GMT-3:00",
+      "offsetminutes": -180
+    },
+    {
+      "code": "BET",
+      "name": "Brazil Eastern Time",
+      "offset": "GMT-3:00",
+      "offsetminutes": -180
+    },
+    {
+      "code": "CAT",
+      "name": "Central African Time",
+      "offset": "GMT-1:00",
+      "offsetminutes": -60
+    }
+  ]
+}
