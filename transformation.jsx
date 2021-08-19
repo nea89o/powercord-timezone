@@ -1,5 +1,7 @@
 const { splitSegments } = require('./util');
 const { React } = require('powercord/webpack');
+const { open } = require('powercord/modal');
+const { getLabel } = require('./popup.jsx');
 const {
   timezones,
   lookup
@@ -8,30 +10,26 @@ const {
 const timezonePattern = new RegExp('(\\d+):(\\d+) *(' + timezones.map(it => `(?:${it.code})`).join('|') + ')', 'g');
 
 function transformMessage (userTimezoneProvider, msgConstruct) {
-  if (!('content' in msgConstruct)) {
-	return msgConstruct;
+  if (!('content' in msgConstruct) || !('flatMap' in msgConstruct.content)) {
+    return msgConstruct;
   }
   return Object.assign({}, msgConstruct, {
-	content: msgConstruct.content.flatMap(it => transformPart(userTimezoneProvider, it))
+    content: msgConstruct.content.flatMap(it => transformPart(userTimezoneProvider, it))
   });
 }
 
 function transformPart (userTimezoneProvider, part) {
   if (typeof part === 'string') {
-	return splitSegments(part, timezonePattern).map(it => {
-	  if (typeof it === 'string') {
-		return it;
-	  }
-	  let [ _, hour, minute, tz ] = it.match;
-	  let timezone = lookup(tz);
-	  let time = hour * 60 + minute;
-	  let userTimezone = userTimezoneProvider();
-	  let offset = userTimezone.offsetminutes - timezone.offsetminutes;
-	  let adjusted = (time + offset) % (24 * 60);
-	  return (<>
-		{hour}:{minute} {timezone.code} -> {adjusted / 60}:{adjusted % 60} {userTimezone.code}
-	  </>);
-	});
+    return splitSegments(part, timezonePattern).map(it => {
+      if (typeof it === 'string') {
+        return it;
+      }
+      let [ _, hour, minute, tz ] = it.match;
+      let timezone = lookup(tz);
+      let time = hour * 60 + minute;
+      let userTimezone = userTimezoneProvider();
+      return getLabel(time, timezone, userTimezone);
+    });
   }
   return [ part ];
 }
